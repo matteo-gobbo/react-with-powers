@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { QueryClientProvider } from "react-query";
 
-import { client } from "~lib/react-query";
+import { client } from "~/lib/react-query";
 
 import App from "./App";
 

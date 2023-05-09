@@ -1,4 +1,4 @@
-import { usePosts } from "~hooks/queries";
+import { usePosts } from "~/hooks/queries";
 
 import "./App.css";
 
