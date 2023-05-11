@@ -6,7 +6,7 @@ import {
   UseQueryOptions,
 } from "react-query";
 
-export const client = new QueryClient();
+export const client = new QueryClient({});
 
 export const useQueryFactory =
   <
@@ -24,9 +24,6 @@ export const useQueryFactory =
   ) =>
   () => {
     return useQuery(queryKey, queryFn, {
-      onError: () => {
-        // TODO: centralize error handling
-      },
       ...options,
     });
   };

@@ -16,11 +16,7 @@
     "noEmit": true,
     "jsx": "react-jsx",
     "paths": {
-      "~/lib/*": ["./src/lib/*"],
-      "~/config/*": ["./src/config/*"],
-      "~/api/*": ["./src/api/*"],
-      "~/hooks/*": ["./src/hooks/*"],
-      "~/models/*": ["./src/models/*"]
+      "~/*": ["./src/*"]
     }
   },
   "include": ["src"],

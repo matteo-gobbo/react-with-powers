@@ -9,13 +9,7 @@ export default defineConfig({
     host: true,
   },
   resolve: {
-    alias: [
-      { find: "~/lib", replacement: path.resolve(__dirname, "src/lib") },
-      { find: "~/config", replacement: path.resolve(__dirname, "src/config") },
-      { find: "~/api", replacement: path.resolve(__dirname, "src/api") },
-      { find: "~/hooks", replacement: path.resolve(__dirname, "src/hooks") },
-      { find: "~/models", replacement: path.resolve(__dirname, "src/models") },
-    ],
+    alias: [{ find: "~", replacement: path.resolve(__dirname, "src") }],
   },
   plugins: [react()],
 });

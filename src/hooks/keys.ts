@@ -1,0 +1,1 @@
+export const FETCH_POSTS_KEY = "FETCH_POST_KEY";
