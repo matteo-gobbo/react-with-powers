@@ -1,5 +1,5 @@
+import { Post } from "~/components/PostList/Post.interface";
 import { axios } from "~/lib/axios";
-import { Post } from "~/models/Post";
 
 import { FETCH_POSTS_PATH } from "./paths";
 

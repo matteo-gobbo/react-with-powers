@@ -1,6 +1,8 @@
 import { usePosts } from "~/hooks/queries";
 
-export const Posts = () => {
+import { PostTitle } from "./PostTitle";
+
+export default function PostList() {
   const { data: posts, isLoading, error } = usePosts();
 
   if (isLoading) return <div>{"Loading..."}</div>;
@@ -11,8 +13,8 @@ export const Posts = () => {
       <h1>Posts</h1>
 
       {posts?.map((post, index) => (
-        <div key={post.id}>{`${index}. ${post.title}`}</div>
+        <PostTitle key={post.id} post={post} index={index} />
       ))}
     </div>
   );
-};
+}

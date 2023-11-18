@@ -1,6 +1,6 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 
-import { Severity } from "~/models/Snackbar";
+import { Severity } from "~/components/Snackbar/Snackbar.type";
 
 interface SnackbarState {
   title: string;

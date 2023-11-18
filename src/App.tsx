@@ -1,6 +1,7 @@
-import { Posts } from "~/components/Posts";
 import { Snackbar } from "~/components/Snackbar";
 import { useAppSelector } from "~/redux/hooks";
+
+import { PostList } from "./components/PostList";
 
 import "./App.css";
 
@@ -9,7 +10,7 @@ function App() {
 
   return (
     <div>
-      <Posts />
+      <PostList />
       {showSnackbarSelector && <Snackbar />}
     </div>
   );

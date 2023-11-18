@@ -1,6 +1,6 @@
 import { fetchPosts } from "~/api/index";
+import { Post } from "~/components/PostList/Post.interface";
 import { useQueryFactory } from "~/lib/react-query";
-import { Post } from "~/models/Post";
 
 import { FETCH_POSTS_KEY } from "./keys";
 
